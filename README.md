@@ -50,6 +50,7 @@ Run the follow command to provision resoruces in Azure
 ```bash
 azd provision
 ```
+When you run `azd provision`, you can view detailed progress of resource deployment in the Azure Portal.
 
 If you don't run azd provision, you can create an [OpenAI resource](https://portal.azure.com/#create/Microsoft.CognitiveServicesOpenAI) and an [AI Search resource](https://portal.azure.com/#create/Microsoft.Search) in the Azure portal to get your endpoints. After it deploys, click Go to resource and view the Endpoint value.  You will also need to deploy a model, e.g. with name `chat` with model `gpt-35-turbo` and `embeddings` with model `text-embedding-3-small`
 
