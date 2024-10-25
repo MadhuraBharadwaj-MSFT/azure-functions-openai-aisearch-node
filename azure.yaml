@@ -5,8 +5,8 @@ metadata:
   template: azure-functions-openai-rag-aisearch-node@1.0.0
 services:
   api:
-    project: ./app/
-    language: node
+    project: .
+    language: js
     host: function
 hooks:
   postprovision:
