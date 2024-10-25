@@ -25,5 +25,5 @@ if (-not (Test-Path ".\app\local.settings.json")) {
             "EMBEDDING_MODEL_DEPLOYMENT_NAME" = "embeddings";
             "SYSTEM_PROMPT" = "You must only use the provided documents to answer the question";
         }
-    } | ConvertTo-Json | Out-File -FilePath ".\app\local.settings.json" -Encoding ascii
+    } | ConvertTo-Json | Out-File -FilePath ".\local.settings.json" -Encoding ascii
 }
