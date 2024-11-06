@@ -6,7 +6,7 @@ products:
 - azure-functions
 - azure
 - entra-id
-urlFragment: azure-functions-openai-aisearch-dotnet8
+urlFragment: azure-functions-openai-aisearch-node
 languages:
 - node
 - bicep
