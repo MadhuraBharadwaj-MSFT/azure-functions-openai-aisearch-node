@@ -72,7 +72,7 @@ If you don't run azd provision, you can create an [OpenAI resource](https://port
 
 ### Permissions
 #### Add your account (contoso.microsoft.com) with the following permissions to the Azure OpenAI and AI Search resources when testing locally.
-If you used `azd provision` this step is already done - your logged in user and your function's managed idenitty already have permissions granted. 
+If you used `azd provision` this step is already done - your logged in user and your function's managed identity already have permissions granted. 
 * Cognitive Services OpenAI User (OpenAI resource)
 * Azure Search Service Contributor (AI Search resource)
 * Azure Search Index Data Contributor (AI Search resource)
