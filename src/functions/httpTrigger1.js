@@ -2,9 +2,9 @@ const { app, input, output } = require("@azure/functions");
 
 const embeddingsStoreOutput = output.generic({
     type: "embeddingsStore",
-    input: '{Text}', // Changed from Url to RawText
-    inputType: 'RawText', // Changed input type to rawText
-    connectionName: "AISearchEndpoint",
+    input: '{Text}', // Name of json key to store in the embeddings store
+    inputType: 'RawText', // Type of input to process
+    connectionName: "AZURE_AISEARCH_ENDPOINT",
     collection: "openai-index",
     model: "%EMBEDDING_MODEL_DEPLOYMENT_NAME%"
 });
@@ -54,7 +54,7 @@ app.http('IngestFile', {
 
 const semanticSearchInput = input.generic({
     type: "semanticSearch",
-    connectionName: "AISearchEndpoint",
+    connectionName: "AZURE_AISEARCH_ENDPOINT",
     collection: "openai-index",
     query: "{Prompt}",
     chatModel: "%CHAT_MODEL_DEPLOYMENT_NAME%",

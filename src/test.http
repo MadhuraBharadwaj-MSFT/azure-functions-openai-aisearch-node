@@ -32,7 +32,7 @@ Content-Type: application/json
 
 {
   "Title": "Weather",
-  "Text": "The weather is 30degress Celcius in Austin Texas today."
+  "Text": "The weather is 30 degress Celcius in Austin Texas today."
 }
 
 ### Ask question of imported data
